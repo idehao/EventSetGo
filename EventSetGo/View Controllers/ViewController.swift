@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtPhone: UITextField!
+    
+    @IBAction func btnLogin(_ sender: Any) {
+        
+        let phone = txtPhone.text!
+
+        print(phone)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

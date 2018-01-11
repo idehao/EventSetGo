@@ -13,9 +13,13 @@
 		AC99F0B12007F73500F4C253 /* EventSetGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC99F0AF2007F73500F4C253 /* EventSetGo.xcdatamodeld */; };
 		AC99F0B32007F73500F4C253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99F0B22007F73500F4C253 /* Assets.xcassets */; };
 		AC99F0B62007F73500F4C253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC99F0B42007F73500F4C253 /* LaunchScreen.storyboard */; };
+		AC99F0C02008065000F4C253 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F0BF2008065000F4C253 /* RegisterViewController.swift */; };
+		E9F2C0237D84B1261A4BAC5A /* Pods_EventSetGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE991B7E78FD09DC6B77E1D1 /* Pods_EventSetGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0041941AECB7A8C5FB80C6A7 /* Pods-EventSetGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSetGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventSetGo/Pods-EventSetGo.debug.xcconfig"; sourceTree = "<group>"; };
+		7339FC8147B242B72573ECC7 /* Pods-EventSetGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSetGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventSetGo/Pods-EventSetGo.release.xcconfig"; sourceTree = "<group>"; };
 		AC99F0A52007F73500F4C253 /* EventSetGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSetGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC99F0A82007F73500F4C253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC99F0AA2007F73500F4C253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AC99F0B22007F73500F4C253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC99F0B52007F73500F4C253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC99F0B72007F73500F4C253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC99F0BF2008065000F4C253 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DE991B7E78FD09DC6B77E1D1 /* Pods_EventSetGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventSetGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F2C0237D84B1261A4BAC5A /* Pods_EventSetGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30A48D25BF42D27F50F98B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE991B7E78FD09DC6B77E1D1 /* Pods_EventSetGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC99F09C2007F73500F4C253 = {
 			isa = PBXGroup;
 			children = (
 				AC99F0A72007F73500F4C253 /* EventSetGo */,
 				AC99F0A62007F73500F4C253 /* Products */,
+				C362A8B08BD0C2F1F00C63F0 /* Pods */,
+				30A48D25BF42D27F50F98B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,41 @@
 		AC99F0A72007F73500F4C253 /* EventSetGo */ = {
 			isa = PBXGroup;
 			children = (
+				AC99F0BE2007FD8300F4C253 /* View Controllers */,
+				AC99F0BD2007FCED00F4C253 /* User Interface */,
 				AC99F0A82007F73500F4C253 /* AppDelegate.swift */,
-				AC99F0AA2007F73500F4C253 /* ViewController.swift */,
-				AC99F0AC2007F73500F4C253 /* Main.storyboard */,
 				AC99F0B22007F73500F4C253 /* Assets.xcassets */,
-				AC99F0B42007F73500F4C253 /* LaunchScreen.storyboard */,
 				AC99F0B72007F73500F4C253 /* Info.plist */,
 				AC99F0AF2007F73500F4C253 /* EventSetGo.xcdatamodeld */,
 			);
 			path = EventSetGo;
+			sourceTree = "<group>";
+		};
+		AC99F0BD2007FCED00F4C253 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AC99F0B42007F73500F4C253 /* LaunchScreen.storyboard */,
+				AC99F0AC2007F73500F4C253 /* Main.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		AC99F0BE2007FD8300F4C253 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC99F0AA2007F73500F4C253 /* ViewController.swift */,
+				AC99F0BF2008065000F4C253 /* RegisterViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C362A8B08BD0C2F1F00C63F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0041941AECB7A8C5FB80C6A7 /* Pods-EventSetGo.debug.xcconfig */,
+				7339FC8147B242B72573ECC7 /* Pods-EventSetGo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC99F0BA2007F73500F4C253 /* Build configuration list for PBXNativeTarget "EventSetGo" */;
 			buildPhases = (
+				4F2DDC07BAF8830FC6F28C0A /* [CP] Check Pods Manifest.lock */,
 				AC99F0A12007F73500F4C253 /* Sources */,
 				AC99F0A22007F73500F4C253 /* Frameworks */,
 				AC99F0A32007F73500F4C253 /* Resources */,
+				0AB7E4CEF94D7BC447197D90 /* [CP] Embed Pods Frameworks */,
+				F1255E6F6E11AC86C5EF4458 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +180,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AB7E4CEF94D7BC447197D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventSetGo/Pods-EventSetGo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventSetGo/Pods-EventSetGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F2DDC07BAF8830FC6F28C0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventSetGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1255E6F6E11AC86C5EF4458 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventSetGo/Pods-EventSetGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC99F0A12007F73500F4C253 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +250,7 @@
 				AC99F0B12007F73500F4C253 /* EventSetGo.xcdatamodeld in Sources */,
 				AC99F0AB2007F73500F4C253 /* ViewController.swift in Sources */,
 				AC99F0A92007F73500F4C253 /* AppDelegate.swift in Sources */,
+				AC99F0C02008065000F4C253 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +385,7 @@
 		};
 		AC99F0BB2007F73500F4C253 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0041941AECB7A8C5FB80C6A7 /* Pods-EventSetGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +401,7 @@
 		};
 		AC99F0BC2007F73500F4C253 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7339FC8147B242B72573ECC7 /* Pods-EventSetGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
